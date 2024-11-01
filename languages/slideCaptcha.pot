@@ -1,0 +1,33 @@
+#: all variables use in the slideCaptcha.php
+msgid "Settings saved"
+msgstr ""
+msgid "Slide captcha Settings"
+msgstr ""
+
+msgid "Use default background"
+msgstr ""
+msgid "Select image"
+msgstr ""
+msgid "Slide surface background"
+msgstr ""
+msgid "Captcha start text"
+msgstr ""
+msgid "Captcha end text"
+msgstr ""
+msgid "Save Changes"
+msgstr ""
+msgid "Swipe to unlock!"
+msgstr ""
+msgid "Unlocked"
+msgstr ""
+msgid "Slide surface background color"
+msgstr ""
+
+msgid "Do not use image like slide surface background"
+msgstr ""
+
+msgid "settings saved"
+msgstr ""
+
+msgid "settings saved"
+msgstr ""

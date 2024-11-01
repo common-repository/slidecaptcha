@@ -1,0 +1,126 @@
+
+.touchsurface {
+    margin-bottom: 10px;
+    overflow: hidden;
+    position:relative;
+    height:50px;
+    border-radius: 5px;
+    background-color: #2980b9;
+    background-image:url('../images/tumblr_static_bg3.png');
+    background-repeat:repeat;
+    background-size-y:3000px;
+    background-position:0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+}
+
+
+.comment-respond form{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ie-user-select: none;
+    user-select: none;
+}
+
+
+
+
+@-webkit-keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: -3000px 0;}
+}
+
+@-moz-keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: -3000px 0;}
+}
+
+@-ms-keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: -3000px 0;}
+}
+
+@-o-keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: -3000px 0;}
+}
+
+@keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+}
+
+
+
+.touchsurface:after, .touchsurface .text{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1052;
+    opacity:1;
+    transition:opacity .5s;
+}
+ .touchsurface .text.unlocked{
+    opacity:0;
+}
+ .touchsurface.finished .text.locked {
+    opacity:0;
+}
+ .touchsurface.finished .text.unlocked{
+    opacity:1;
+    color: #fff;
+}
+.touchsurface:after{
+    content:'';
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    z-index:1052;
+}
+.touchsurface .text{
+    color:#444;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    font-size:16px;
+}
+.touchsurface + .form-submit #submit:disabled{
+    cursor:not-allowed;
+}
+.touchsurface .slide{
+    position: absolute;
+    padding:0;
+    top: 0px;
+    left:0;
+    width: 50px;
+    height: 50px;
+    background:#fff url("../images/slide-bg.png") 0 -7px no-repeat;
+    background-size: 100px 100px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    z-index:1053;
+    cursor:pointer;
+}
+.touchsurface .slide:hover {
+    background-color:#000;
+}
+.touchsurface.dragging .slide{
+    background-color: #000;
+}
+.touchsurface .slide:hover, .touchsurface.dragging .slide {
+    background-position-y: -52px;
+    -moz-background-position-y: -52px;
+    -webkit-background-position-y: -52px;
+    -o-background-position-y: -52px;
+}
+.touchsurface.finished .slide{
+    background-position: -51px -4px;
+}
+
+.touchsurface.finished .slide:hover{
+    background-position: -51px -54px;
+}
